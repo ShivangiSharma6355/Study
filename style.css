@@ -48,25 +48,63 @@ body{
 .logo-text{
     font-size: 2rem;
 }
+
+
 .nav{
     display: none;
     gap: 1.5rem;
+    ul {
+        list-style: none;
+        background: #fff;
+    }
+      ul li {
+        display: inline-block;
+        position: relative;
+    }
+       ul li a{
+    
+        display: flex;
+        padding: 20px 25px;
+        color: #295deb;
+        text-decoration: none;
+        text-align: center;
+        font-size: 20px;
+        font-size: 1.125rem;
+        transform: color 01s;
+        gap: 1.5rem;
+    }
+     ul li ul.dropdown li{
+        display: block; 
+    }
+      ul li ul.dropdown{
+        width: 100%;
+        background: #fff;
+        position: absolute;
+        z-index: 999;
+        display: none;
+    }
+      ul li a:hover{
+        background: #93bfe8;
+    } 
+     ul li:hover ul.dropdown{
+        display: block;
+    } 
 }
+
+
+
+
 @media  screen and (min-width:768px){
     .nav{
         display: flex;
-    }
+       
 }
-    
-
+}
 .nav link{
     color: #718096;
     font-size: 1.125rem;
     font-weight: 600;
     transform: color 01s;
-}
-.nav-link:hover{
-    color: var(--link-color);
 }
 
 .Contact-button{
@@ -106,8 +144,6 @@ body{
     }
     
 }
-
-
 
 .menu-icon{
      height: 1.5rem;
@@ -638,3 +674,42 @@ ul{
         grid-template-columns: repeat(2,1fr);
     }
 }
+
+
+/* ul {
+    list-style: none;
+    background: #fff;
+}
+  ul li {
+    display: inline-block;
+    position: relative;
+}
+   ul li a{
+
+    display: flex;
+    padding: 20px 25px;
+    color: #295deb;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-size: 1.125rem;
+    transform: color 01s;
+    gap: 1.5rem;
+}
+ ul li ul.dropdown li{
+    display: block; 
+}
+  ul li ul.dropdown{
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+  ul li a:hover{
+    background: #92dc29;
+} 
+ ul li:hover ul.dropdown{
+    display: block;
+} 
+ */
