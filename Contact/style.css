@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Pappins',sans-serif;
+    font-family: 'Pappins', sans-serif;
 }
-.contact{
+
+.contact {
     position: relative;
     min-height: 100vh;
     padding: 50px 100px;
@@ -19,23 +19,24 @@
     background-size: cover;
 }
 
-.contact.content{
+.contact.content {
     max-width: 800px;
     text-align: center;
 }
-.contact.content h2{
+
+.contact.content h2 {
     font-size: 36px;
     font-weight: 500;
-    color: #fff;  
+    color: #fff;
 }
 
-.contact.content p{
+.contact.content p {
     font-size: 36px;
     font-weight: 300;
     color: #fff;
 }
 
-.container{
+.container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -44,20 +45,20 @@
     flex-direction: column;
 }
 
-.container .contactInfo{
+.container .contactInfo {
     width: 50%;
     display: flex;
- flex-direction: column;
+    flex-direction: column;
 }
 
-.container .contactInfo .box{
+.container .contactInfo .box {
     position: relative;
     padding: 18px 0;
     display: flex;
-  
+
 }
 
-.container .contactInfo .box .icon{
+.container .contactInfo .box .icon {
     min-width: 60px;
     height: 60px;
     background: #fff;
@@ -69,37 +70,37 @@
 
 }
 
-.container .contactInfo .box .text{
+.container .contactInfo .box .text {
     display: flex;
     margin-left: 20px;
     font-size: 16px;
     color: blod black;
     flex-direction: column;
     font-weight: 300;
-   
+
 }
 
-.container .contactInfo .box .text h3{
+.container .contactInfo .box .text h3 {
     font-weight: 500;
     color: #6c7e06;
 }
 
-.contactFrom{
+.contactFrom {
     width: 80%;
     padding: 40px;
     background: #fff;
 
 }
 
-.contactFrom h2{
+.contactFrom h2 {
     font-size: 30px;
     color: #333;
-    font-weight: 500;  
+    font-weight: 500;
 
 
 }
 
-.contactFrom .inputBox{
+.contactFrom .inputBox {
     position: relative;
     width: 100%;
     margin-top: 10px;
@@ -116,10 +117,10 @@
     border-bottom: 2px solid #333;
     outline: none;
     resize: none;
- 
+
 }
 
-.contactFrom .inputBox span{
+.contactFrom .inputBox span {
     position: absolute;
     left: 0;
     padding: 5px 0;
@@ -128,21 +129,19 @@
     pointer-events: none;
     transition: 0.5s;
     color: #666;
-   
+
 }
 
 .contactFrom .inputBox input:focus~span,
 .contactFrom .inputBox input:valid~span,
 .contactFrom .inputBox textarea:focus~span,
-.contactFrom .inputBox textarea:focus~span
-    {
+.contactFrom .inputBox textarea:focus~span {
     color: #e91e63;
     font-size: 12px;
     transform: translateY(-20px);
 }
 
-.contactFrom .inputBox input[type="Submit"]
-{
+.contactFrom .inputBox input[type="Submit"] {
     width: 100px;
     background: #00bcd4;
     color: #fff;
@@ -152,26 +151,22 @@
     font-size: 18px;
 
 }
+
 @media (max-width:991px) {
-    .contact{
+    .contact {
         padding: 50px;
     }
-    .container{
+
+    .container {
         flex-direction: column;
     }
-     .container .contactInfo{
+
+    .container .contactInfo {
         margin-bottom: 40px;
-     }
-     .container .contactInfo ,
-     .contactFrom{
+    }
+
+    .container .contactInfo,
+    .contactFrom {
         width: 100%;
-     }
+    }
 }
-
-
-
-
-
-
-
-
